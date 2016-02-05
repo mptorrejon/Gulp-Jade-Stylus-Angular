@@ -1,0 +1,19 @@
+/*This file includes all styl files to ensure order and consolidation*/
+.body_one {
+  margin-left: 30px;
+  color: #f00;
+}
+.body_two {
+  margin-left: 30px;
+  color: #00f;
+}
+.left_panel {
+  display: inline-block;
+  background: #00f;
+  color: #f00;
+}
+.right_panel {
+  display: inline-block;
+  background: #f00;
+  color: #00f;
+}

@@ -1,12 +1,10 @@
 html
 	head
 		title Gulp | Test
-		link(rel='stylesheet' type='text/css' href='./public/assets/stylesheets/body.css')
+		link(rel='stylesheet' type='text/css' href='./public/assets/stylesheets/build/global.css')
 	body
 		h3 Main Container - Index.jade
 		include ./source/views/body.jade
-			include ./source/views/left_panel.jade
-			include ./source/views/right_panel.jade
-		div This is a div2
-		div This another div
+		include ./source/views/left_panel.jade
+		include ./source/views/right_panel.jade
 		include ./source/views/footer.jade

@@ -18,9 +18,9 @@ gulp.task('html-converter', function(){
 });
 //builds css from stylus
 gulp.task('css-converter', function(){
-	return gulp.src('./source/stylus/*.styl')
+	return gulp.src('./source/stylus/global.styl')
 			.pipe(stylus())
-			.pipe(gulp.dest('./public/assets/stylesheets'))
+			.pipe(gulp.dest('./public/assets/stylesheets/build'))
 			.pipe(connect.reload());
 })
 //watches for index.jade file and
