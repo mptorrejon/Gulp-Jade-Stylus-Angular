@@ -4,7 +4,29 @@ html
 		link(rel='stylesheet' type='text/css' href='./public/assets/stylesheets/build/global.css')
 	body
 		h3 Main Container - Index.jade
-		include ./source/views/body.jade
-		include ./source/views/left_panel.jade
-		include ./source/views/right_panel.jade
-		include ./source/views/footer.jade
+		p Files from Source-stylus will be built into in public/assets/stylesheets/build/global.css
+		p Jade files will also be built into a index.jade in / directory, this file will be compile into a html file in / .
+		p There are watchers for any changes done in styl and jade files.
+		.left
+			include ./source/views/body.jade
+			include ./source/views/left_panel.jade
+			include ./source/views/right_panel.jade
+			include ./source/views/footer.jade
+		.right 
+			h3 This is the file structure to be used
+			.lvl1 public/
+				.lvl2 assets/
+					.lvl3 javascripts/
+					.lvl3 stylesheets/
+			.lvl1 source/
+				.lvl2 javascript/
+				.lvl2 stylus/
+					.lvl3 -body.styl
+					.lvl3 -footer.styl
+					.lvl3 -global.styl
+					.lvl3 -header.styl
+					.lvl3 -left_panel.styl
+					.lvl3 -right_panel.styl
+				.lvl2 views/
+			.lvl1 index.html
+			.lvl1 index.jade

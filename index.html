@@ -6,11 +6,39 @@
   </head>
   <body>
     <h3>Main Container - Index.jade</h3>
-    <h3>Body.jade container</h3>
-    <div class="body_one">From body_1</div>
-    <div class="body_two">From body_2</div>
-    <div class="left_panel">This is from Left Panel</div>
-    <div class="right_panel">This is from right Panel</div>
-    <h3>This is from footer.jade</h3>
+    <p>Files from Source-stylus will be built into in public/assets/stylesheets/build/global.css</p>
+    <p>Jade files will also be built into a index.jade in / directory, this file will be compile into a html file in / .</p>
+    <p>There are watchers for any changes done in styl and jade files.</p>
+    <div class="left">
+      <h3>Body.jade container</h3>
+      <div class="body_one">From body_1</div>
+      <div class="body_two">From body_2</div>
+      <div class="left_panel">This is from Left Panel</div>
+      <div class="right_panel">This is from right Panel</div>
+      <h3>This is from footer.jade</h3>
+    </div>
+    <div class="right"> 
+      <h3>This is the file structure to be used</h3>
+      <div class="lvl1">public/
+        <div class="lvl2">assets/
+          <div class="lvl3">javascripts/</div>
+          <div class="lvl3">stylesheets/</div>
+        </div>
+      </div>
+      <div class="lvl1">source/
+        <div class="lvl2">javascript/</div>
+        <div class="lvl2">stylus/
+          <div class="lvl3">-body.styl</div>
+          <div class="lvl3">-footer.styl</div>
+          <div class="lvl3">-global.styl</div>
+          <div class="lvl3">-header.styl</div>
+          <div class="lvl3">-left_panel.styl</div>
+          <div class="lvl3">-right_panel.styl</div>
+        </div>
+        <div class="lvl2">views/</div>
+      </div>
+      <div class="lvl1">index.html</div>
+      <div class="lvl1">index.jade</div>
+    </div>
   </body>
 </html>

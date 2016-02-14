@@ -1,19 +1,40 @@
 /*This file includes all styl files to ensure order and consolidation*/
-.body_one {
-  margin-left: 30px;
+h3 {
+  text-align: center;
+}
+.left {
+  padding: 0px 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+.left .body_one {
   color: #f00;
 }
-.body_two {
-  margin-left: 30px;
+.left .body_two {
   color: #00f;
 }
-.left_panel {
+.left .left_panel {
   display: inline-block;
   background: #00f;
   color: #f00;
 }
-.right_panel {
+.left .right_panel {
   display: inline-block;
   background: #f00;
   color: #00f;
+}
+.right {
+  padding: 0px 5px;
+  display: inline-block;
+  vertical-align: top;
+  border-left: 1px solid #d3d3d3;
+}
+.right .lvl1 {
+  margin-left: 1em;
+}
+.right .lvl1 .lvl2 {
+  margin-left: 2em;
+}
+.right .lvl1 .lvl2 .lvl3 {
+  margin-left: 3em;
 }
